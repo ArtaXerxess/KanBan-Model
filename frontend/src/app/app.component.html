@@ -1,0 +1,60 @@
+<!-- app.component.html -->
+
+<router-outlet />
+
+<div class="p-5 mb-1 bg-body-tertiary rounded-3" style="background-color: #c19a6c;">
+  <div class="container-fluid py-5 h-100 p-5  rounded-3 ">
+    <h1 class="display-5 fw-bold">KanBan Board</h1>
+    <!-- Button to Add Task -->
+    <button class="btn btn-primary mb-3" (click)="addNewTask()">Add New Task</button>
+    
+    <div class="container-border">
+      <div class="container-header">
+        <div class="cols">
+          TO DO
+        </div>
+        <div class="cols">
+          In Progress
+        </div>
+        <div class="cols">
+          Testing
+        </div>
+        <div class="cols">
+          Done
+        </div>
+      </div>
+      <div class="container">
+        <div class="cols">
+          <app-to-do></app-to-do>
+        </div>
+        <div class="cols">
+          <app-in-progress></app-in-progress>
+        </div>
+        <div class="cols">
+          <app-testing></app-testing>
+        </div>
+        <div class="cols">
+          <app-done></app-done>
+        </div>
+      </div>
+    </div>
+    <!-- <table bgColor="#c19a6c" class="table">
+      <thead>
+        <tr>
+          <th scope="col">To Do</th>
+          <th scope="col">In Progress</th>
+          <th scope="col">Testing</th>
+          <th scope="col">Done</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="cols"><app-to-do></app-to-do></td>
+          <td class="cols"><app-in-progress></app-in-progress></td>
+          <td class="cols"><app-testing></app-testing></td>
+          <td class="cols"><app-done></app-done></td>
+        </tr>
+      </tbody>
+    </table> -->
+  </div>
+</div>

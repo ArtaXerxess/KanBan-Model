@@ -1,0 +1,19 @@
+.task-stack {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+
+}
+
+.textarea{
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}

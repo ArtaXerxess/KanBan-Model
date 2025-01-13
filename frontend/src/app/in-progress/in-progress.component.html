@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="task-stack">
+        <div class="card text-bg-primary mb-3  " *ngFor="let task of tasks">
+            <h5 class="card-header">{{ task.name }}</h5>
+            <div class="card-body">
+                <p class="card-text">{{ task.description }}</p>
+                <div class="container  ">
+                    <div class="container btn btn-group">
+                        <button (click)="moveTaskToTesting(task)" class="btn btn-primary"  >
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+                              </svg>
+                        </button>
+                         <button (click)="moveTaskToDone(task)" class="btn btn-primary"  >
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708"/>
+                                <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708"/>
+                              </svg>
+                         </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

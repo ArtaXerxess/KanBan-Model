@@ -1,0 +1,11 @@
+.task-stack {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn{
+    margin-left: 1px;
+    margin-right: 1px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}

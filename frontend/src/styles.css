@@ -1,0 +1,47 @@
+/* You can add global styles to this file, and also import other style files */
+.card{
+    min-height: 190px;
+    /* width: 300px; */
+    /* border: 1px solid black !important; */
+    /* .card-header{
+        border-bottom: 1px solid black;
+    } */
+}
+
+button{
+    border: 1px solid black !important;
+}
+
+router-outlet{
+    background-color: #c19a6c;
+}
+
+.container-header, .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+   
+}
+
+.container-header{
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+}
+
+.container-border{
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+.card{
+    border: 2px solid black;
+}
+
+.card-header{
+    border-bottom: 1px dotted black;
+}
+
+.card-body{
+    padding-bottom: 0px ;
+}
